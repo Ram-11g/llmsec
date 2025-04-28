@@ -151,11 +151,3 @@ python run_test.py --attack-type prompt_injection --provider cohere --verbose
 python run_test.py --attack-type data_extraction --provider cohere --verbose
 python run_test.py --attack-type model_extraction --provider cohere --verbose
 
-## Attack Results
-
-### Prompt Leaking Attack - Cohere
-- **Status**: Failed
-- **Provider**: Cohere
-- **Attack Type**: Prompt Leaking
-- **Execution Time**: 0.00s
-- **Error**: Provider sort error
