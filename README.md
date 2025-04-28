@@ -1,4 +1,4 @@
-# LLM Pentesting Tools
+# LLM Pentesting Tool
 
 A toolkit for testing and evaluating the security of Large Language Models (LLMs) against various types of attacks.
 
