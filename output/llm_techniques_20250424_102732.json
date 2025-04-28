@@ -1,0 +1,469 @@
+{
+  "techniques": [
+    {
+      "id": "http://arxiv.org/abs/2504.16921v1",
+      "title": "IberBench: LLM Evaluation on Iberian Languages",
+      "description": "Large Language Models (LLMs) remain difficult to evaluate comprehensively,\nparticularly for languages other than English, where high-quality data is often\nlimited. Existing benchmarks and leaderboards are predominantly\nEnglish-centric, with only a few addressing other languages. These benchmarks\nfall short in several key areas: they overlook the diversity of language\nvarieties, prioritize fundamental Natural Language Processing (NLP)\ncapabilities over tasks of industrial relevance, and are static. With these\naspects in mind, we present IberBench, a comprehensive and extensible benchmark\ndesigned to assess LLM performance on both fundamental and industry-relevant\nNLP tasks, in languages spoken across the Iberian Peninsula and Ibero-America.\nIberBench integrates 101 datasets from evaluation campaigns and recent\nbenchmarks, covering 22 task categories such as sentiment and emotion analysis,\ntoxicity detection, and summarization. The benchmark addresses key limitations\nin current evaluation practices, such as the lack of linguistic diversity and\nstatic evaluation setups by enabling continual updates and community-driven\nmodel and dataset submissions moderated by a committee of experts. We evaluate\n23 LLMs ranging from 100 million to 14 billion parameters and provide empirical\ninsights into their strengths and limitations. Our findings indicate that (i)\nLLMs perform worse on industry-relevant tasks than in fundamental ones, (ii)\nperformance is on average lower for Galician and Basque, (iii) some tasks show\nresults close to random, and (iv) in other tasks LLMs perform above random but\nbelow shared task systems. IberBench offers open-source implementations for the\nentire evaluation pipeline, including dataset normalization and hosting,\nincremental evaluation of LLMs, and a publicly accessible leaderboard.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16921v1",
+      "added_date": "2025-04-24 10:27:20"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16918v1",
+      "title": "OptimAI: Optimization from Natural Language Using LLM-Powered AI Agents",
+      "description": "Optimization plays a vital role in scientific research and practical\napplications, but formulating a concrete optimization problem described in\nnatural language into a mathematical form and selecting a suitable solver to\nsolve the problem requires substantial domain expertise. We introduce\n\\textbf{OptimAI}, a framework for solving \\underline{Optim}ization problems\ndescribed in natural language by leveraging LLM-powered \\underline{AI} agents,\nachieving superior performance over current state-of-the-art methods. Our\nframework is built upon four key roles: (1) a \\emph{formulator} that translates\nnatural language problem descriptions into precise mathematical formulations;\n(2) a \\emph{planner} that constructs a high-level solution strategy prior to\nexecution; and (3) a \\emph{coder} and a \\emph{code critic} capable of\ninteracting with the environment and reflecting on outcomes to refine future\nactions. Ablation studies confirm that all roles are essential; removing the\nplanner or code critic results in $5.8\\times$ and $3.1\\times$ drops in\nproductivity, respectively. Furthermore, we introduce UCB-based debug\nscheduling to dynamically switch between alternative plans, yielding an\nadditional $3.3\\times$ productivity gain. Our design emphasizes multi-agent\ncollaboration, allowing us to conveniently explore the synergistic effect of\ncombining diverse models within a unified system. Our approach attains 88.1\\%\naccuracy on the NLP4LP dataset and 71.2\\% on the Optibench (non-linear w/o\ntable) subset, reducing error rates by 58\\% and 50\\% respectively over prior\nbest results.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16918v1",
+      "added_date": "2025-04-24 10:27:25"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16913v1",
+      "title": "Tracing Thought: Using Chain-of-Thought Reasoning to Identify the LLM Behind AI-Generated Text",
+      "description": "In recent years, the detection of AI-generated text has become a critical\narea of research due to concerns about academic integrity, misinformation, and\nethical AI deployment. This paper presents COT Fine-tuned, a novel framework\nfor detecting AI-generated text and identifying the specific language model.\nresponsible for generating the text. We propose a dual-task approach, where\nTask A involves classifying text as AI-generated or human-written, and Task B\nidentifies the specific LLM behind the text. The key innovation of our method\nlies in the use of Chain-of-Thought reasoning, which enables the model to\ngenerate explanations for its predictions, enhancing transparency and\ninterpretability. Our experiments demonstrate that COT Fine-tuned achieves high\naccuracy in both tasks, with strong performance in LLM identification and\nhuman-AI classification. We also show that the CoT reasoning process\ncontributes significantly to the models effectiveness and interpretability.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16913v1",
+      "added_date": "2025-04-24 10:27:25"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16902v1",
+      "title": "Building A Secure Agentic AI Application Leveraging A2A Protocol",
+      "description": "As Agentic AI systems evolve from basic workflows to complex multi agent\ncollaboration, robust protocols such as Google's Agent2Agent (A2A) become\nessential enablers. To foster secure adoption and ensure the reliability of\nthese complex interactions, understanding the secure implementation of A2A is\nessential. This paper addresses this goal by providing a comprehensive security\nanalysis centered on the A2A protocol. We examine its fundamental elements and\noperational dynamics, situating it within the framework of agent communication\ndevelopment. Utilizing the MAESTRO framework, specifically designed for AI\nrisks, we apply proactive threat modeling to assess potential security issues\nin A2A deployments, focusing on aspects such as Agent Card management, task\nexecution integrity, and authentication methodologies.\n  Based on these insights, we recommend practical secure development\nmethodologies and architectural best practices designed to build resilient and\neffective A2A systems. Our analysis also explores how the synergy between A2A\nand the Model Context Protocol (MCP) can further enhance secure\ninteroperability. This paper equips developers and architects with the\nknowledge and practical guidance needed to confidently leverage the A2A\nprotocol for building robust and secure next generation agentic applications.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16902v1",
+      "added_date": "2025-04-24 10:27:25"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16887v1",
+      "title": "The Sponge is Quantum Indifferentiable",
+      "description": "The sponge is a cryptographic construction that turns a public permutation\ninto a hash function. When instantiated with the Keccak permutation, the sponge\nforms the NIST SHA-3 standard. SHA-3 is a core component of most post-quantum\npublic-key cryptography schemes slated for worldwide adoption.\n  While one can consider many security properties for the sponge, the ultimate\none is indifferentiability from a random oracle, or simply indifferentiability.\nThe sponge was proved indifferentiable against classical adversaries by Bertoni\net al. in 2008. Despite significant efforts in the years since, little is known\nabout sponge security against quantum adversaries, even for simple properties\nlike preimage or collision resistance beyond a single round. This is primarily\ndue to the lack of a satisfactory quantum analog of the lazy sampling technique\nfor permutations.\n  In this work, we develop a specialized technique that overcomes this barrier\nin the case of the sponge. We prove that the sponge is in fact indifferentiable\nfrom a random oracle against quantum adversaries. Our result establishes that\nthe domain extension technique behind SHA-3 is secure in the post-quantum\nsetting. Our indifferentiability bound for the sponge is a loose\n$O(\\mathsf{poly}(q) 2^{-\\mathsf{min}(r, c)/4})$, but we also give bounds on\npreimage and collision resistance that are tighter.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16887v1",
+      "added_date": "2025-04-24 10:27:25"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16884v1",
+      "title": "Do Large Language Models know who did what to whom?",
+      "description": "Large Language Models (LLMs) are commonly criticized for not understanding\nlanguage. However, many critiques focus on cognitive abilities that, in humans,\nare distinct from language processing. Here, we instead study a kind of\nunderstanding tightly linked to language: inferring who did what to whom\n(thematic roles) in a sentence. Does the central training objective of\nLLMs-word prediction-result in sentence representations that capture thematic\nroles? In two experiments, we characterized sentence representations in four\nLLMs. In contrast to human similarity judgments, in LLMs the overall\nrepresentational similarity of sentence pairs reflected syntactic similarity\nbut not whether their agent and patient assignments were identical vs.\nreversed. Furthermore, we found little evidence that thematic role information\nwas available in any subset of hidden units. However, some attention heads\nrobustly captured thematic roles, independently of syntax. Therefore, LLMs can\nextract thematic roles but, relative to humans, this information influences\ntheir representations more weakly.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16884v1",
+      "added_date": "2025-04-24 10:27:25"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16883v1",
+      "title": "Enhancing Critical Thinking with AI: A Tailored Warning System for RAG Models",
+      "description": "Retrieval-Augmented Generation (RAG) systems offer a powerful approach to\nenhancing large language model (LLM) outputs by incorporating fact-checked,\ncontextually relevant information. However, fairness and reliability concerns\npersist, as hallucinations can emerge at both the retrieval and generation\nstages, affecting users' reasoning and decision-making. Our research explores\nhow tailored warning messages -- whose content depends on the specific context\nof hallucination -- shape user reasoning and actions in an educational quiz\nsetting. Preliminary findings suggest that while warnings improve accuracy and\nawareness of high-level hallucinations, they may also introduce cognitive\nfriction, leading to confusion and diminished trust in the system. By examining\nthese interactions, this work contributes to the broader goal of AI-augmented\nreasoning: developing systems that actively support human reflection, critical\nthinking, and informed decision-making rather than passive information\nconsumption.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16883v1",
+      "added_date": "2025-04-24 10:27:25"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16877v1",
+      "title": "Context-Enhanced Vulnerability Detection Based on Large Language Model",
+      "description": "Vulnerability detection is a critical aspect of software security. Accurate\ndetection is essential to prevent potential security breaches and protect\nsoftware systems from malicious attacks. Recently, vulnerability detection\nmethods leveraging deep learning and large language models (LLMs) have garnered\nincreasing attention. However, existing approaches often focus on analyzing\nindividual files or functions, which limits their ability to gather sufficient\ncontextual information. Analyzing entire repositories to gather context\nintroduces significant noise and computational overhead. To address these\nchallenges, we propose a context-enhanced vulnerability detection approach that\ncombines program analysis with LLMs. Specifically, we use program analysis to\nextract contextual information at various levels of abstraction, thereby\nfiltering out irrelevant noise. The abstracted context along with source code\nare provided to LLM for vulnerability detection. We investigate how different\nlevels of contextual granularity improve LLM-based vulnerability detection\nperformance. Our goal is to strike a balance between providing sufficient\ndetail to accurately capture vulnerabilities and minimizing unnecessary\ncomplexity that could hinder model performance. Based on an extensive study\nusing GPT-4, DeepSeek, and CodeLLaMA with various prompting strategies, our key\nfindings includes: (1) incorporating abstracted context significantly enhances\nvulnerability detection effectiveness; (2) different models benefit from\ndistinct levels of abstraction depending on their code understanding\ncapabilities; and (3) capturing program behavior through program analysis for\ngeneral LLM-based code analysis tasks can be a direction that requires further\nattention.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16877v1",
+      "added_date": "2025-04-24 10:27:25"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16871v1",
+      "title": "Exploring How LLMs Capture and Represent Domain-Specific Knowledge",
+      "description": "We study whether Large Language Models (LLMs) inherently capture\ndomain-specific nuances in natural language. Our experiments probe the domain\nsensitivity of LLMs by examining their ability to distinguish queries from\ndifferent domains using hidden states generated during the prefill phase. We\nreveal latent domain-related trajectories that indicate the model's internal\nrecognition of query domains. We also study the robustness of these domain\nrepresentations to variations in prompt styles and sources. Our approach\nleverages these representations for model selection, mapping the LLM that best\nmatches the domain trace of the input query (i.e., the model with the highest\nperformance on similar traces). Our findings show that LLMs can differentiate\nqueries for related domains, and that the fine-tuned model is not always the\nmost accurate. Unlike previous work, our interpretations apply to both closed\nand open-ended generative tasks",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16871v1",
+      "added_date": "2025-04-24 10:27:25"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16866v1",
+      "title": "An Adaptive ML Framework for Power Converter Monitoring via Federated Transfer Learning",
+      "description": "This study explores alternative framework configurations for adapting thermal\nmachine learning (ML) models for power converters by combining transfer\nlearning (TL) and federated learning (FL) in a piecewise manner. This approach\ninherently addresses challenges such as varying operating conditions, data\nsharing limitations, and security implications. The framework starts with a\nbase model that is incrementally adapted by multiple clients via adapting three\nstate-of-the-art domain adaptation techniques: Fine-tuning, Transfer Component\nAnalysis (TCA), and Deep Domain Adaptation (DDA). The Flower framework is\nemployed for FL, using Federated Averaging for aggregation. Validation with\nfield data demonstrates that fine-tuning offers a straightforward TL approach\nwith high accuracy, making it suitable for practical applications. Benchmarking\nresults reveal a comprehensive comparison of these methods, showcasing their\nrespective strengths and weaknesses when applied in different scenarios.\nLocally hosted FL enhances performance when data aggregation is not feasible,\nwhile cloud-based FL becomes more practical with a significant increase in the\nnumber of clients, addressing scalability and connectivity challenges.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16866v1",
+      "added_date": "2025-04-24 10:27:25"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16930v1",
+      "title": "Procedural Dataset Generation for Zero-Shot Stereo Matching",
+      "description": "Synthetic datasets are a crucial ingredient for training stereo matching\nnetworks, but the question of what makes a stereo dataset effective remains\nlargely unexplored. We investigate the design space of synthetic datasets by\nvarying the parameters of a procedural dataset generator, and report the\neffects on zero-shot stereo matching performance using standard benchmarks. We\ncollect the best settings to produce Infinigen-Stereo, a procedural generator\nspecifically optimized for zero-shot stereo datasets. Models trained only on\ndata from our system outperform robust baselines trained on a combination of\nexisting synthetic datasets and have stronger zero-shot stereo matching\nperformance than public checkpoints from prior works. We open source our system\nat https://github.com/princeton-vl/InfinigenStereo to enable further research\non procedural stereo datasets.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16930v1",
+      "added_date": "2025-04-24 10:27:26"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16925v1",
+      "title": "Latent Diffusion Planning for Imitation Learning",
+      "description": "Recent progress in imitation learning has been enabled by policy\narchitectures that scale to complex visuomotor tasks, multimodal distributions,\nand large datasets. However, these methods often rely on learning from large\namount of expert demonstrations. To address these shortcomings, we propose\nLatent Diffusion Planning (LDP), a modular approach consisting of a planner\nwhich can leverage action-free demonstrations, and an inverse dynamics model\nwhich can leverage suboptimal data, that both operate over a learned latent\nspace. First, we learn a compact latent space through a variational\nautoencoder, enabling effective forecasting of future states in image-based\ndomains. Then, we train a planner and an inverse dynamics model with diffusion\nobjectives. By separating planning from action prediction, LDP can benefit from\nthe denser supervision signals of suboptimal and action-free data. On simulated\nvisual robotic manipulation tasks, LDP outperforms state-of-the-art imitation\nlearning approaches, as they cannot leverage such additional data.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16925v1",
+      "added_date": "2025-04-24 10:27:26"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16923v1",
+      "title": "Meta-Learning Online Dynamics Model Adaptation in Off-Road Autonomous Driving",
+      "description": "High-speed off-road autonomous driving presents unique challenges due to\ncomplex, evolving terrain characteristics and the difficulty of accurately\nmodeling terrain-vehicle interactions. While dynamics models used in\nmodel-based control can be learned from real-world data, they often struggle to\ngeneralize to unseen terrain, making real-time adaptation essential. We propose\na novel framework that combines a Kalman filter-based online adaptation scheme\nwith meta-learned parameters to address these challenges. Offline meta-learning\noptimizes the basis functions along which adaptation occurs, as well as the\nadaptation parameters, while online adaptation dynamically adjusts the onboard\ndynamics model in real time for model-based control. We validate our approach\nthrough extensive experiments, including real-world testing on a full-scale\nautonomous off-road vehicle, demonstrating that our method outperforms baseline\napproaches in prediction accuracy, performance, and safety metrics,\nparticularly in safety-critical scenarios. Our results underscore the\neffectiveness of meta-learned dynamics model adaptation, advancing the\ndevelopment of reliable autonomous systems capable of navigating diverse and\nunseen environments. Video is available at: https://youtu.be/cCKHHrDRQEA",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16923v1",
+      "added_date": "2025-04-24 10:27:26"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16922v1",
+      "title": "Generalized Neighborhood Attention: Multi-dimensional Sparse Attention at the Speed of Light",
+      "description": "Many sparse attention mechanisms such as Neighborhood Attention have\ntypically failed to consistently deliver speedup over the self attention\nbaseline. This is largely due to the level of complexity in attention\ninfrastructure, and the rapid evolution of AI hardware architecture. At the\nsame time, many state-of-the-art foundational models, particularly in computer\nvision, are heavily bound by attention, and need reliable sparsity to escape\nthe O(n^2) complexity. In this paper, we study a class of promising sparse\nattention mechanisms that focus on locality, and aim to develop a better\nanalytical model of their performance improvements. We first introduce\nGeneralized Neighborhood Attention (GNA), which can describe sliding window,\nstrided sliding window, and blocked attention. We then consider possible design\nchoices in implementing these approaches, and create a simulator that can\nprovide much more realistic speedup upper bounds for any given setting.\nFinally, we implement GNA on top of a state-of-the-art fused multi-headed\nattention (FMHA) kernel designed for the NVIDIA Blackwell architecture in\nCUTLASS. Our implementation can fully realize the maximum speedup theoretically\npossible in many perfectly block-sparse cases, and achieves an effective\nutilization of 1.3 petaFLOPs/second in FP16. In addition, we plug various GNA\nconfigurations into off-the-shelf generative models, such as Cosmos-7B,\nHunyuanVideo, and FLUX, and show that it can deliver 28% to 46% end-to-end\nspeedup on B200 without any fine-tuning. We will open source our simulator and\nBlackwell kernels directly through the NATTEN project.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16922v1",
+      "added_date": "2025-04-24 10:27:26"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16917v1",
+      "title": "Application of an attention-based CNN-BiLSTM framework for in vivo two-photon calcium imaging of neuronal ensembles: decoding complex bilateral forelimb movements from unilateral M1",
+      "description": "Decoding behavior, such as movement, from multiscale brain networks remains a\ncentral objective in neuroscience. Over the past decades, artificial\nintelligence and machine learning have played an increasingly significant role\nin elucidating the neural mechanisms underlying motor function. The advancement\nof brain-monitoring technologies, capable of capturing complex neuronal signals\nwith high spatial and temporal resolution, necessitates the development and\napplication of more sophisticated machine learning models for behavioral\ndecoding. In this study, we employ a hybrid deep learning framework, an\nattention-based CNN-BiLSTM model, to decode skilled and complex forelimb\nmovements using signals obtained from in vivo two-photon calcium imaging. Our\nfindings demonstrate that the intricate movements of both ipsilateral and\ncontralateral forelimbs can be accurately decoded from unilateral M1 neuronal\nensembles. These results highlight the efficacy of advanced hybrid deep\nlearning models in capturing the spatiotemporal dependencies of neuronal\nnetworks activity linked to complex movement execution.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16917v1",
+      "added_date": "2025-04-24 10:27:26"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16916v1",
+      "title": "Zero-shot Sim-to-Real Transfer for Reinforcement Learning-based Visual Servoing of Soft Continuum Arms",
+      "description": "Soft continuum arms (SCAs) soft and deformable nature presents challenges in\nmodeling and control due to their infinite degrees of freedom and non-linear\nbehavior. This work introduces a reinforcement learning (RL)-based framework\nfor visual servoing tasks on SCAs with zero-shot sim-to-real transfer\ncapabilities, demonstrated on a single section pneumatic manipulator capable of\nbending and twisting. The framework decouples kinematics from mechanical\nproperties using an RL kinematic controller for motion planning and a local\ncontroller for actuation refinement, leveraging minimal sensing with visual\nfeedback. Trained entirely in simulation, the RL controller achieved a 99.8%\nsuccess rate. When deployed on hardware, it achieved a 67% success rate in\nzero-shot sim-to-real transfer, demonstrating robustness and adaptability. This\napproach offers a scalable solution for SCAs in 3D visual servoing, with\npotential for further refinement and expanded applications.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16916v1",
+      "added_date": "2025-04-24 10:27:26"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16915v1",
+      "title": "DreamO: A Unified Framework for Image Customization",
+      "description": "Recently, extensive research on image customization (e.g., identity, subject,\nstyle, background, etc.) demonstrates strong customization capabilities in\nlarge-scale generative models. However, most approaches are designed for\nspecific tasks, restricting their generalizability to combine different types\nof condition. Developing a unified framework for image customization remains an\nopen challenge. In this paper, we present DreamO, an image customization\nframework designed to support a wide range of tasks while facilitating seamless\nintegration of multiple conditions. Specifically, DreamO utilizes a diffusion\ntransformer (DiT) framework to uniformly process input of different types.\nDuring training, we construct a large-scale training dataset that includes\nvarious customization tasks, and we introduce a feature routing constraint to\nfacilitate the precise querying of relevant information from reference images.\nAdditionally, we design a placeholder strategy that associates specific\nplaceholders with conditions at particular positions, enabling control over the\nplacement of conditions in the generated results. Moreover, we employ a\nprogressive training strategy consisting of three stages: an initial stage\nfocused on simple tasks with limited data to establish baseline consistency, a\nfull-scale training stage to comprehensively enhance the customization\ncapabilities, and a final quality alignment stage to correct quality biases\nintroduced by low-quality data. Extensive experiments demonstrate that the\nproposed DreamO can effectively perform various image customization tasks with\nhigh quality and flexibly integrate different types of control conditions.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16915v1",
+      "added_date": "2025-04-24 10:27:26"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16907v1",
+      "title": "BadVideo: Stealthy Backdoor Attack against Text-to-Video Generation",
+      "description": "Text-to-video (T2V) generative models have rapidly advanced and found\nwidespread applications across fields like entertainment, education, and\nmarketing. However, the adversarial vulnerabilities of these models remain\nrarely explored. We observe that in T2V generation tasks, the generated videos\noften contain substantial redundant information not explicitly specified in the\ntext prompts, such as environmental elements, secondary objects, and additional\ndetails, providing opportunities for malicious attackers to embed hidden\nharmful content. Exploiting this inherent redundancy, we introduce BadVideo,\nthe first backdoor attack framework tailored for T2V generation. Our attack\nfocuses on designing target adversarial outputs through two key strategies: (1)\nSpatio-Temporal Composition, which combines different spatiotemporal features\nto encode malicious information; (2) Dynamic Element Transformation, which\nintroduces transformations in redundant elements over time to convey malicious\ninformation. Based on these strategies, the attacker's malicious target\nseamlessly integrates with the user's textual instructions, providing high\nstealthiness. Moreover, by exploiting the temporal dimension of videos, our\nattack successfully evades traditional content moderation systems that\nprimarily analyze spatial information within individual frames. Extensive\nexperiments demonstrate that BadVideo achieves high attack success rates while\npreserving original semantics and maintaining excellent performance on clean\ninputs. Overall, our work reveals the adversarial vulnerability of T2V models,\ncalling attention to potential risks and misuse. Our project page is at\nhttps://wrt2000.github.io/BadVideo2025/.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16907v1",
+      "added_date": "2025-04-24 10:27:27"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16850v1",
+      "title": "Comparative analysis of finite-size ammonia and n-heptane droplets evaporation rates in weakly compressible homogeneous turbulence: an interface-resolved Direct Numerical Simulation study",
+      "description": "This study presents direct numerical simulation (DNS) of finite-size,\ninterface-resolved ammonia and n-heptane droplets evaporating in decaying\nhomogeneous isotropic turbulence. Simulations are conducted for each fuel in a\ndense spray region, where the liquid volume fraction exceeds\n$\\mathcal{O}(10^{-2})$. The focus is on investigating the complex interactions\nbetween droplets, turbulence, and phase change, with emphasis on\ndroplet-droplet interactions and their influence on the evaporation process. We\nprovide state-of-the-art insights into the evaporation characteristics of two\ndifferent fuels under turbulent conditions, aiming to provide a deeper\nunderstanding of their different evaporation rates in spray-combustion\napplications. To this end, the present study also explores how varying\nturbulence intensities affect the evaporation rates of each fuel, revealing\ndifferences in coalescence behavior and energy transfer from the liquid to the\ngaseous phase. These findings are crucial to the improvement of predictive CFD\nmodels and to the optimization of fuel injection in spray-combustion\napplications, especially under high-pressure conditions.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16850v1",
+      "added_date": "2025-04-24 10:27:27"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16832v1",
+      "title": "GreenMind: A Next-Generation Vietnamese Large Language Model for Structured and Logical Reasoning",
+      "description": "Chain-of-Thought (CoT) is a robust approach for tackling LLM tasks that\nrequire intermediate reasoning steps prior to generating a final answer. In\nthis paper, we present GreenMind-Medium-14B-R1, the Vietnamese reasoning model\ninspired by the finetuning strategy based on Group Relative Policy\nOptimization. We also leverage a high-quality Vietnamese synthesized reasoning\ndataset and design two reward functions to tackle the main limitations of this\ntechnique: (i) language mixing, where we explicitly detect the presence of\nbiased language characters during the process of sampling tokens, and (ii) we\nleverage Sentence Transformer-based models to ensure that the generated\nreasoning content maintains factual correctness and does not distort the final\noutput. Experimental results on the Vietnamese dataset from the VLSP 2023\nChallenge demonstrate that our model outperforms prior works and enhances\nlinguistic consistency in its responses. Furthermore, we extend our evaluation\nto SeaExam-a multilingual multiple-choice dataset, showing the effectiveness of\nour reasoning method compared to few-shot prompting techniques.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16832v1",
+      "added_date": "2025-04-24 10:27:27"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16815v1",
+      "title": "Distributed Unknown Input Observers for Discrete-Time Linear Time-Invariant Systems",
+      "description": "This paper introduces a Distributed Unknown Input Observer (D-UIO) design\nmethodology that uses a technique called node-wise detectability decomposition\nto estimate the state of a discrete-time linear time-invariant (LTI) system in\na distributed way, even when there are noisy measurements and unknown inputs.\nIn the considered scenario, sensors are associated to nodes of an underlying\ncommunication graph. Each node has a limited scope as it can only access local\nmeasurements and share data with its neighbors. The problem of designing the\nobserver gains is divided into two separate sub-problems: (i) design local\noutput injection gains to mitigate the impact of measurement noise, and (ii)\ndesign diffusive gains to compensate for the lack of information through a\nconsensus protocol. A direct and computationally efficient synthesis strategy\nis formulated by linear matrix inequalities (LMIs) and solved via semidefinite\nprogramming. Finally, two simulative scenarios are presented to illustrate the\neffectiveness of the distributed observer when two different node-wise\ndecompositions are adopted.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16815v1",
+      "added_date": "2025-04-24 10:27:27"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16769v1",
+      "title": "Deep photonic reservoir computer for nonlinear equalization of 16-level quadrature amplitude modulation signals",
+      "description": "Photonic reservoir computer (PRC) is a kind of real-time and adaptive\nrecurrent neural network, where only weights in the readout layer require\ntraining. PRC is a promising tool to deal with the crucial issue of nonlinear\nequalization in optical fiber communications. Here we theoretically show a deep\nPRC for the nonlinear equalization of coherent signals with the format of 16-\nlevel quadrature amplitude modulation (16-QAM). The deep PRC consists of\ncascading injection-locked Fabry-Perot lasers with optical feedback. Both the\nin-phase component and the quadrature component of the 16-QAM signals are\nsimultaneously injected into the deep PRC in parallel, based on the wavelength\nmultiplexing of Fabry-Perot lasers. It is demonstrated that the deep PRC\nexhibits strong capability for the nonlinearity compensation of coherent\nsignals. The Q factor is improved by more than 1 dB for 16-QAM signals with\nlaunch powers above 10 dBm, associated with a bit rate of 240 Gbps and a\ntransmission distance of 50 km.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16769v1",
+      "added_date": "2025-04-24 10:27:27"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16768v1",
+      "title": "How Effective are Generative Large Language Models in Performing Requirements Classification?",
+      "description": "In recent years, transformer-based large language models (LLMs) have\nrevolutionised natural language processing (NLP), with generative models\nopening new possibilities for tasks that require context-aware text generation.\nRequirements engineering (RE) has also seen a surge in the experimentation of\nLLMs for different tasks, including trace-link detection, regulatory\ncompliance, and others. Requirements classification is a common task in RE.\nWhile non-generative LLMs like BERT have been successfully applied to this\ntask, there has been limited exploration of generative LLMs. This gap raises an\nimportant question: how well can generative LLMs, which produce context-aware\noutputs, perform in requirements classification? In this study, we explore the\neffectiveness of three generative LLMs-Bloom, Gemma, and Llama-in performing\nboth binary and multi-class requirements classification. We design an extensive\nexperimental study involving over 400 experiments across three widely used\ndatasets (PROMISE NFR, Functional-Quality, and SecReq). Our study concludes\nthat while factors like prompt design and LLM architecture are universally\nimportant, others-such as dataset variations-have a more situational impact,\ndepending on the complexity of the classification task. This insight can guide\nfuture model development and deployment strategies, focusing on optimising\nprompt structures and aligning model architectures with task-specific needs for\nimproved performance.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16768v1",
+      "added_date": "2025-04-24 10:27:27"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16754v1",
+      "title": "HEMA : A Hippocampus-Inspired Extended Memory Architecture for Long-Context AI Conversations",
+      "description": "Large language models (LLMs) struggle with maintaining coherence in extended\nconversations spanning hundreds of turns, despite performing well within their\ncontext windows. This paper introduces HEMA (Hippocampus-Inspired Extended\nMemory Architecture), a dual-memory system inspired by human cognitive\nprocesses. HEMA combines Compact Memory - a continuously updated one-sentence\nsummary preserving global narrative coherence, and Vector Memory - an episodic\nstore of chunk embeddings queried via cosine similarity. When integrated with a\n6B-parameter transformer, HEMA maintains coherent dialogues beyond 300 turns\nwhile keeping prompt length under 3,500 tokens. Experimental results show\nsubstantial improvements: factual recall accuracy increases from 41% to 87%,\nand human-rated coherence improves from 2.7 to 4.3 on a 5-point scale. With 10K\nindexed chunks, Vector Memory achieves P@5 >= 0.80 and R@50 >= 0.74, doubling\nthe area under the precision-recall curve compared to summarization-only\napproaches. Ablation studies reveal two key insights: semantic forgetting\nthrough age-weighted pruning reduces retrieval latency by 34% with minimal\nrecall loss, and a two-level summary hierarchy prevents cascade errors in\nultra-long conversations exceeding 1,000 turns. HEMA demonstrates that\ncombining verbatim recall with semantic continuity provides a practical\nsolution for privacy-aware conversational AI capable of month-long dialogues\nwithout model retraining.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16754v1",
+      "added_date": "2025-04-24 10:27:27"
+    },
+    {
+      "id": "http://arxiv.org/abs/2504.16746v1",
+      "title": "Beating the break-even point with autonomous quantum error correction",
+      "description": "Quantum error correction (QEC) is essential for practical quantum computing,\nas it protects fragile quantum information from errors by encoding it in\nhigh-dimensional Hilbert spaces. Conventional QEC protocols typically require\nrepeated syndrome measurements, real-time feedback, and the use of multiple\nphysical qubits for encoding. Such implementations pose significant technical\ncomplexities, particularly for trapped-ion systems, with high demands on\nprecision and scalability. Here, we realize autonomous QEC with a logical qubit\nencoded in multiple internal spin states of a single trapped ion, surpassing\nthe break-even point for qubit lifetime. Our approach leverages engineered\nspin-motion couplings to transfer error-induced entropy into motional modes,\nwhich are subsequently dissipated through sympathetic cooling with an ancilla\nion, fully eliminating the need for measurement and feedback. By repetitively\napplying this autonomous QEC protocol under injected low-frequency noise, we\nextend the logical qubit lifetime to approximately 11.6 ms, substantially\noutperforming lifetime for both the physical qubit ($\\simeq$0.9 ms) and the\nuncorrected logical qubit ($\\simeq$0.8 ms), thereby beating the break-even\npoint with autonomous protection of quantum information without measurement or\npost-selection. This work presents an efficient approach to fault-tolerant\nquantum computing that harnesses the intrinsic multi-level structure of trapped\nions, providing a distinctive path toward scalable architectures and robust\nquantum memories with reduced overhead.",
+      "source": "arxiv",
+      "url": "http://arxiv.org/pdf/2504.16746v1",
+      "added_date": "2025-04-24 10:27:27"
+    },
+    {
+      "id": "671269505",
+      "title": "litellm",
+      "description": "Python SDK, Proxy Server (LLM Gateway) to call 100+ LLM APIs in OpenAI format - [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, Replicate, Groq]",
+      "source": "github",
+      "url": "https://github.com/BerriAI/litellm",
+      "added_date": "2025-04-24 10:27:28"
+    },
+    {
+      "id": "926664182",
+      "title": "leakyGPT",
+      "description": "The one-stop DLP browser extension to stop users from sharing sensitive information with chatGPT.",
+      "source": "github",
+      "url": "https://github.com/Nigsgehe/leakyGPT",
+      "added_date": "2025-04-24 10:27:28"
+    },
+    {
+      "id": "864637121",
+      "title": "medium-writeups",
+      "description": "This repository updates latest Bug Bounty medium writeups every 10 minutes, https://readmedium.com/Medium_URL, https://archive.ph/Medium_URL, https://freedium.cfd/Medium_URL",
+      "source": "github",
+      "url": "https://github.com/rix4uni/medium-writeups",
+      "added_date": "2025-04-24 10:27:28"
+    },
+    {
+      "id": "49618253",
+      "title": "oiledmachine-overlay",
+      "description": "Another ebuild overlay for the Gentoo Linux operating system containing enhancements, game development, apps.",
+      "source": "github",
+      "url": "https://github.com/orsonteodoro/oiledmachine-overlay",
+      "added_date": "2025-04-24 10:27:28"
+    },
+    {
+      "id": "599320067",
+      "title": "langflow",
+      "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+      "source": "github",
+      "url": "https://github.com/langflow-ai/langflow",
+      "added_date": "2025-04-24 10:27:28"
+    },
+    {
+      "id": "935781104",
+      "title": "UdomchonlachanCanal",
+      "description": "",
+      "source": "github",
+      "url": "https://github.com/KanompangpingNtp/UdomchonlachanCanal",
+      "added_date": "2025-04-24 10:27:29"
+    },
+    {
+      "id": "971646914",
+      "title": "laravelapp",
+      "description": "",
+      "source": "github",
+      "url": "https://github.com/HarosoftTechnology/laravelapp",
+      "added_date": "2025-04-24 10:27:29"
+    },
+    {
+      "id": "971784306",
+      "title": "laravel12-ajax-code",
+      "description": "",
+      "source": "github",
+      "url": "https://github.com/SC-BOT11/laravel12-ajax-code",
+      "added_date": "2025-04-24 10:27:29"
+    },
+    {
+      "id": "877172751",
+      "title": "abt-identity",
+      "description": "",
+      "source": "github",
+      "url": "https://github.com/omarshaheen95/abt-identity",
+      "added_date": "2025-04-24 10:27:29"
+    },
+    {
+      "id": "956640097",
+      "title": "d-erp",
+      "description": "",
+      "source": "github",
+      "url": "https://github.com/kapuniko/d-erp",
+      "added_date": "2025-04-24 10:27:29"
+    },
+    {
+      "id": "633927609",
+      "title": "promptfoo",
+      "description": "Test your prompts, agents, and RAGs. Red teaming, pentesting, and vulnerability scanning for LLMs. Compare performance of GPT, Claude, Gemini, Llama, and more. Simple declarative configs with command line and CI/CD integration.",
+      "source": "github",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "added_date": "2025-04-24 10:27:31"
+    },
+    {
+      "id": "86936869",
+      "title": "vulnrepo",
+      "description": "VULNR\u039ePO - Free vulnerability report generator and repository, end-to-end encrypted! Templates of issues, CWE,CVE,MITRE ATT&CK,PCI DSS, import Nmap/Nessus/Burp/OpenVAS/Bugcrowd/Trivy, Jira export, TXT/JSON/MARKDOWN/HTML/DOCX, attachments, automatic changelog, stats, vulnerability management, bugbounty, local ai/llm, super fast pentest reporting!",
+      "source": "github",
+      "url": "https://github.com/kac89/vulnrepo",
+      "added_date": "2025-04-24 10:27:31"
+    },
+    {
+      "id": "970801331",
+      "title": "AutoPwnGPT",
+      "description": "AutoPwnGPT is a next-gen offensive security tool that combines a modular pentesting framework with a GPT-powered natural language interface.",
+      "source": "github",
+      "url": "https://github.com/TonmoyInfrastructureVision/AutoPwnGPT",
+      "added_date": "2025-04-24 10:27:31"
+    },
+    {
+      "id": "971192360",
+      "title": "Pentest-Tools-MCP-Server",
+      "description": "Pentest-Tools-MCP-Server",
+      "source": "github",
+      "url": "https://github.com/ch1nhpd/Pentest-Tools-MCP-Server",
+      "added_date": "2025-04-24 10:27:31"
+    },
+    {
+      "id": "899137185",
+      "title": "Web-Application-Penetration-Testing",
+      "description": "This repo offers a walkthrough for web application pentesting (WAPT), covering all PortSwigger web vulnerability labs and showcasing real-world vulnerabilities and bug bounty insights.",
+      "source": "github",
+      "url": "https://github.com/Esther7171/Web-Application-Penetration-Testing",
+      "added_date": "2025-04-24 10:27:31"
+    },
+    {
+      "id": "owasp_0",
+      "title": "\ud83d\udce2 The 2025 List is Available:",
+      "description": "Download OWASP Top 10 for LLM Applications List for 2025 Full Version.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_1",
+      "title": "Download Additional Resources from our Website including:",
+      "description": "New to LLM Application security? Check out our resources page to learn more.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_2",
+      "title": "Localized versions are also available.",
+      "description": "New to LLM Application security? Check out our resources page to learn more.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_3",
+      "title": "Want to Contribute your Expertise? Join us.",
+      "description": "New to LLM Application security? Check out our resources page to learn more.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_4",
+      "title": "Just Want to Learn About LLM Security",
+      "description": "New to LLM Application security? Check out our resources page to learn more.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_5",
+      "title": "Become a Project Supporter or Sponsor Sponsorship",
+      "description": "We are a not for profit open source community driven project. If you are interested in supporting the project with reasources or become a sponsor to help us ensure we can continue to sustain the community efforts, offsetting operational, and outreach costs. Visit the Sponsor Section on our website.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_6",
+      "title": "Thank you to our Current Sponsors and Supporters",
+      "description": "Manipulating LLMs via crafted inputs can lead to unauthorized access, data breaches, and compromised decision-making.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_7",
+      "title": "LLM01: Prompt Injection",
+      "description": "Manipulating LLMs via crafted inputs can lead to unauthorized access, data breaches, and compromised decision-making.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_8",
+      "title": "LLM02: Insecure Output Handling",
+      "description": "Neglecting to validate LLM outputs may lead to downstream security exploits, including code execution that compromises systems and exposes data.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_9",
+      "title": "LLM03: Training Data Poisoning",
+      "description": "Tampered training data can impair LLM models leading to responses that may compromise security, accuracy, or ethical behavior.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_10",
+      "title": "LLM04: Model Denial of Service",
+      "description": "Overloading LLMs with resource-heavy operations can cause service disruptions and increased costs.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_11",
+      "title": "LLM05: Supply Chain Vulnerabilities",
+      "description": "Depending upon compromised components, services or datasets undermine system integrity, causing data breaches and system failures.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_12",
+      "title": "LLM06: Sensitive Information Disclosure",
+      "description": "Failure to protect against disclosure of sensitive information in LLM outputs can result in legal consequences or a loss of competitive advantage.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_13",
+      "title": "LLM07: Insecure Plugin Design",
+      "description": "LLM plugins processing untrusted inputs and having insufficient access control risk severe exploits like remote code execution.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_14",
+      "title": "LLM08: Excessive Agency",
+      "description": "Granting LLMs unchecked autonomy to take action can lead to unintended consequences, jeopardizing reliability, privacy, and trust.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_15",
+      "title": "LLM09: Overreliance",
+      "description": "Failing to critically assess LLM outputs can lead to compromised decision making, security vulnerabilities, and legal liabilities.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_16",
+      "title": "LLM10: Model Theft",
+      "description": "Unauthorized access to proprietary large language models risks theft, competitive advantage, and dissemination of sensitive information.",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    },
+    {
+      "id": "owasp_17",
+      "title": "Corporate Supporters",
+      "description": "\r\n      OWASP, the OWASP logo, and Global AppSec are registered trademarks and AppSec Days, AppSec California, AppSec Cali, SnowFROC, OWASP Boston Application Security Conference, and LASCON are trademarks of the OWASP Foundation, Inc. Unless otherwise specified, all content on the site is Creative Commons Attribution-ShareAlike v4.0 and provided without warranty of service or accuracy. For more information, please refer to our General Disclaimer. OWASP does not endorse or recommend commercial products or services, allowing our community to remain vendor neutral with the collective wisdom of the best minds in software security worldwide. Copyright 2025, OWASP Foundation, Inc.\r\n    ",
+      "source": "owasp",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "added_date": "2025-04-24 10:27:32"
+    }
+  ],
+  "last_update": "20250424_102732"
+}
